@@ -18,6 +18,7 @@ public class CoinCollector : MonoBehaviour
             icoll.Collect();
             if(icoll is Coin)
             {
+              
             _animator.SetTrigger("Collected");
             _animator.SetLayerWeight(1, 1);
             GetComponent<PlayerMover>().canMove = false;
